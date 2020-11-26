@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ee">
+<meta charset= 'UTF-8'>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+</style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#pealeht">Pealeht</a></li>
+        <li><a href="./Värskelt mürgiste seente alaleht.html">Värskelt mürgised seened</a></li>
+    </ul>
+<section>
+    <img class="mySlides" src="https://nami-nami.ee/files/img/mokk.jpg" style="width:100%">
+    <img class="mySlides" src="https://media.voog.com/0000/0030/9870/photos/Voiseen.JPG?1410867233829g" style="width:100%">
+    <img class="mySlides" src="https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%B5mmuriisikas.jpg" style="width:100%">
+  </section>
+  
+<script>
+  // Automatic Slideshow - change image every 5 seconds
+  var myIndex = 0;
+  carousel();
+  
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 5000);
+  }
+</script>
+  
+  </body>
+  </html>
