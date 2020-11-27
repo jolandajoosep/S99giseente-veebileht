@@ -47,67 +47,40 @@ body, html {
   display: inline-block;
   font-size: 20px;
   margin: 4px 2px;
-  transition-duration: 0.4s;
+  transition-duration: 0.3s;
   cursor: pointer;
-  float: left;
-}
 
+}
 .button1 {
   background-color: #2C2C2C;
   color: white; 
   overflow: hidden;
 }
-
 .button1:hover {
   background-color: #C65499;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.s {
-  float: right;
-  width: 100px;
-  height: 100px;
-  overflow: hidden;
-}
+
 </style>
 </head>
 <body>
 	<div class="bg"><div class="bg2"></div>
 		<div class="h-text">
-	        <h1>SÖÖGISEENED EESTI METSADES</h1>
-	        <h3>Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst </h3></div></div>
-	<ul>
-    	<button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt söödavad seened</button>
-        <button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt mürgised seened</button>
-        <button class="button button1" href="#leht">Kupatamisjuhised
-        </button>
-        <button class="button button1" href="#leht">Seenemetsad Eestis
-        </button>
-    </ul>
-	<div>
- <section class="sect">
- 
-    <img class="mySlides s" src="https://media.voog.com/0000/0030/9870/photos/Voiseen.JPG?1410867233829g">
-    <img class="mySlides s" src="https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%B5mmuriisikas.jpg">
-  </section>
+	    <h1>SÖÖGISEENED EESTI METSADES</h1>
+	    <h3>Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst Sissejuhatav tekst </h3>
+    </div>
   </div>
-<script>
-  // Automatic Slideshow - change image every 5 seconds
-  var myIndex = 0;
-  carousel();
-  
-function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {myIndex = 1}
-    x[myIndex-1].style.display = "block";
-    setTimeout(carousel, 5000);
-  }
-</script>
-  
+   
+  <div>
+    <center>
+      <a class="button button1" href="#leht">Värskelt söödavad seened</a>
+      <a class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt mürgised seened</a>
+      <a class="button button1" href="#leht">Kupatamisjuhised</a>
+      <a class="button button1" href="#leht">Seenemetsad Eestis</a>
+    </center>
+  </div>
+    
+
   </body>
   </html>
