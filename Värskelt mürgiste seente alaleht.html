@@ -2,20 +2,81 @@
 <html lang="ee">
 <head>
 <style>
-.Image {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
-    border: solid black 1px;
-    width: 300px;
-    height: 250px;
-    padding: 2px;
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
 }
-.center {
-    text-align:center;
-    margin-left: 100px;
-    margin-right: 100px;
+.bg {
+  background-image: url("https://nami-nami.ee/files//news/3468/kupa.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg2 {
+    background-color: black;
+    opacity: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: auto;
+    padding: 40px;
+    border-radius: 4px;
+    width: 60%;
+    height: 200px;
+}
+.h-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+.button {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 20px 32px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+
+.button1 {
+  background-color: #2C2C2C;
+  color: white; 
+  overflow: hidden;
+}
+
+.button1:hover {
+  background-color: #E9967A;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+div.gallery {
+  margin-left: 27.5%;
+  margin-right: auto;
+  margin-top: 35px;
+  border: 1px solid #2C2C2C;
+  float: left;
+  width: 600px;
+}
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  padding: 15px;
+  text-align: center;
 }
 </style>
     <meta charset="UTF-8">
@@ -23,162 +84,137 @@
 </head>
 
 <body>
-    <div class="center">
-        <h1>Värskelt mürgised seened</h1>
-        <p>Nimekiri Eestis leiduvatest söögiseentest, mis on värskelt mürgised aga kuumutatult söödavad.</p>
-    
-        <h3>Hallipiimane riisikas (Lactarius vietus)</h3>
-        <p>Kasvab juulist hilissügiseni. Toorelt kibe ja nõrgalt mürgine, kuid kupatatult söödav.</p>
-        <br>
-        <img
-        src=https://elurikkus.ee/biocache-media/dr1/6996/0c667e79-f774-4a7f-a056-1408bfdaf7b0/2B85F86095FB5C50F6BA0017FA4A00181DCA4B628E4B63FA639DADF022CBE228__large.JPG
-        class="Image"
-        alt="hallipiimane riisikas"           
-    />
-    
-        <h3>Harilik põdramokk (Sarcodon imbricatus)</h3>
-        <p>Kasvab augustist oktoobrini. Mõned inimesed on põdramoka suhtes tundlikud ja neil tekitab seen seedehäireid või kõhuvalu. Seepärast tuleks põdramoka söömisesse suhtuda ettevaatlikult ja kasutada teda vaid vähesel hulgal segus teiste seentega, et roa maitsele ja lõhnale vürtsikust lisada. Sobib suppideks, kastmeteks, praetult ja hautatult kartulite ja köögiviljadega.</p>
-        <br>
-        <img
-        src=https://nami-nami.ee/files/img/mokk.jpg
-        alt="harilik põdramokk"
-        class="Image"
-    />
-    
-        <h3>Kamperriisikas (Lactarius camphoratus)</h3>
-        <p>Värskelt on seen lõhnata, kuid kuivatatult omandab väga tugeva ja iseloomuliku lõhna. Seetõttu kuivatatult kasutatakse maitseainena. Kamperriisikat süües tuleb kupatada. Tarvitatakse liha-, kala- ja köögivilja toitude maitsestamiseks ja lisandiks.</p>
-        <br> 
-        <img
-        src=https://nami-nami.ee/files/img/kamper.jpg
-        alt="kamperriisikas"
-        class="Image"
-    />
-  
-        <h3>Kaseriisikas (Lactarius torminosus)</h3>
-        <p>Kasvab juuli lõpust hilissügiseni. Pärast kupatamist kuulub heade söögiseente hulka. Kibeda piimamahlaga, värskelt mürgine. Kaseriisikaid sobib säilitada soolatult, hapendatult ja marineeritult. Soolamisel seened peavad enne söömist vähemalt 45–50 päeva soolas olema</p>
-        <br> 
-        <img
-        src=https://media.voog.com/0000/0030/9870/photos/ader_kaseriisikas.jpg
-        alt="kaseriisikas"
-        class="Image"
-    />
-   
-        <h3>Kevadkogrits (Gyromitra esculenta)</h3>
-        <p>Kasvab aprilli keskpaigast või maist juuni keskpaigani. Õigesti toiduks töödelduna on kevadkogrits söödav, kuid tegelikult on ta ohtlikult mürgine ja võib raskemal juhul isegi surma põhjustada. Kevadkogritsas sisalduvad mürkained lenduvad kuumutamisel kergesti ja tänu sellele muutuvad ilma kaaneta potis kupatatud või isegi lahtisel pannil praetud seened enamasti ohutuks. Mingil juhul ei tohi kevadkogritsaid küpsetada mikrolaineahjus, sest siis ei hävi mürkained ja raske mürgistus on vältimatu.</p>
-        <br> 
-        <img
-        src=https://farm8.static.flickr.com/7242/7302802866_bd9feb605c.jpg
-        alt="kevadkorgits"
-        class="Image"
-    />
-  
-        <h3>Kirbe pilvik (Russula emetica)</h3>
-        <p>Mürgine rabe seeneliha on põletava maitsega, kuid erilise lõhnata ja ei muuda värvi. Söödav ainult kupatatult.</p>
-        <br>
-        <img
-        src=https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Russula_emetica_in_Poland.jpg/1200px-Russula_emetica_in_Poland.jpg
-        alt="kirbe pilvik"
-        class="Image"
-    />
-    
-        <h3>Kurrel (Ptychoverpa bohemica)</h3>
-        <p>Kasvab aprillist juunini. Kõige parem on seda süüa värskelt praetuna, sest säilitamiseks see ei sobi. Kindlasti ei tohi aga korjata selgete vananemistunnustega seeni, kuna need võivad põhjustada mürgistust.</p>
-        <br>
-        <img
-        src=https://www.loodusmuuseum.ee/sites/default/files/kurrel%20%281%29.jpg
-        alt="kurrel"
-        class="Image"
-    />
-    
-        <h3>Lilla ebaheinik (Lepista nuda)</h3>
-        <p>Kasvab septembrist novembrini. Värskelt tekitab hemolüüsi ja põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu.</p>
-        <br>
-        <img
-        src=https://www.loodusmuuseum.ee/sites/default/files/lilla_ebaheinik_0.jpg
-        alt="lilla ebaheinik"
-        class="Image"
-    />
-  
-        <h3>Männiriisikas (Lactarius rufus)</h3>
-        <p>Kasvab juulist novembrini. Kibeda maitseline, seetõttu tuleb seent kupatada 30 minutit või leotada 12 tundi külmas vees. Pärast leotamist keeda 5-10 minutit soolases vees. Männiriisikat on kõige otstarbekam tarvitada soolatult koos teiste sügiseste seentega. Säilitatakse marineeritult ja soolatult.</p>
-        <br> 
-        <img
-        src=https://media.voog.com/0000/0030/9870/photos/ader_m%C3%A4nniriisikad.jpg
-        alt="männiriisikas"
-        class="Image"
-    />
-    
-        <h3>Piparriisikas (Lactarius piperatius)</h3>
-        <p>Piimmahl on valge ja kibeda maitsega. Vajab kupatamist. Sobivam tarvitada soolatult.</p>
-        <br>
-        <img
-        src=https://vignette.wikia.nocookie.net/raamaturott/images/b/bb/Lactarius_piperatus_98569.jpg/revision/latest/scale-to-width-down/230?cb=20140925162159&path-prefix=et
-        alt="piparriisikas"
-        class="Image"
-    />
-    
-        <h3>Rädipiimik ehk Rädiriisikas (Lactarius vellereus)</h3>
-        <p>Kasvab juulist septembrini. Rädiriisika viljaliha on nii kõva, et kui seenekübarad üksteise vastu hõõrduvad, siis võib kuulda krigisevat häält. Seen on tinglikult söödav ning tarvitatakse kupatatult ja peamiselt soolatakse. Säilitatakse soolatult.</p>
-        <br>
-        <img
-        src=https://www.first-nature.com/fungi/images/russulaceae/lactarius-vellereus2.jpg
-        alt="rädipiimik"
-        class="Image"
-    />
-
-        <h3>Tore riisikas (Lactarius repraesentaneus)</h3>
-        <p>Kasvab augustist oktoobrini. Maitse pisut mõrkjas, nii et pikaajaline kupatamine ei ole vajalik. Säilitamine nagu teisigi riisikaid pärast eeltöötlemist soolata või külmutada.</p>
-        <br>
-        <img
-        src=https://media.rmk.ee/photos/raps450_block.jpg
-        alt="tore riisikas"
-        class="Image"
-    />
-    
-        <h3>Tõmmu külmaseen (Armillaria ostoyae)</h3>
-        <p>Kasvab juulist oktoobrini. Hapuka maitsega. Värskelt tekitab hemolüüsi ning põhjustab mao-soolehäiretega mürgistust. Kasutatakse kupatatult seenesalatites, hautatult köögiviljadega ja soolamiseks. Säilitatakse soolatult.</p>
-        <br>
-        <img
-        src=https://f8.pmo.ee/EdczP5Ef90r1Bw-aw2M2BwuvWM8=/685x0/filters:focal(2054x1038:4060x2650)/nginx/o/2020/07/24/13230512t1h0aa1.jpg
-        alt="tõmmu külmaseen"
-        class="Image"
-    />
- 
-        <h3>Tõmmuriisikas (Lactarius necator)</h3>
-        <p>Kasvab augustist oktoobrini. Värskelt põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu söögiseen.</p>
-        <br>
-        <img
-        src=https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%B5mmuriisikas.jpg
-        alt="tõmmuriisikas"
-        class="Image"
-        />
-   
-        <h3>Udulehtrik (Clitocybe nebularis)</h3>
-        <p>Kasvab augustist novembrini. Värskelt tekitab hemolüüsi ja põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu.</p>
-        <br>
-        <img
-        src=https://vignette.wikia.nocookie.net/raamaturott/images/9/98/Clitocybe_nebularis_G3.1.jpg/revision/latest/scale-to-width-down/340?cb=20200929105436&path-prefix=et
-        alt="udulehtrik"
-        class="Image"
-    />
-
-        <h3>Viltriisikas (Lactarius scoticus)</h3>
-        <p>Tema piimmahl on valge ja  väga kibe, kuid kupatamisel kibedus kaob.<p>
-        <br>
-        <img
-        src=https://lh3.googleusercontent.com/proxy/_BA5G2EYsxrf8v5YodGF5po1t-e-CmX3rBXTkmFe1hSuDsPDTnXOIZnBEer0i77nHnQJW-O9MY86983fvBeP2gXtglDw6oY6IR1FdnQ6Buo91QIELIebpwNmLLjQgQ
-        alt="viltriisikas"
-        class="Image"
-    />
-
-        <h3>Võiseen ehk kollariisikas (Lactarius scrobiculatus)</h3>
-        <p>Kollariisikas on kibe ja Sisaldab mürgiseid terpenoide, mistõttu peab teda eelnevalt kupatama.</p>
-        <br>
-        <img
-        src=https://media.voog.com/0000/0030/9870/photos/Voiseen.JPG?1410867233829
-        alt="võiseen"
-        class="Image"
-    />
+        <div class="bg"><div class="bg2"></div>
+        <div class="h-text">
+            <h1>VÄRSKELT MÜRGISED SEENED</h1>
+            <h3>Nimekiri Eestis leiduvatest söögiseentest, mis on värskelt mürgised, kuid kuumutatult söödavad.</h3></div></div>
+    <ul>
+        <button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Pealeht</button>
+        <button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt söödavad seened</button>
+        <button class="button button1" href="#leht">Kupatamisjuhised
+        </button>
+        <button class="button button1" href="#leht">Seenemetsad Eestis
+        </button>
+    </ul>
+    <div>
+        <br><br><br>
+    <div class="gallery">
+        <a target="_blank" href="https://www.gobice.com/pic/Lactarius_vietus_-_Brezova_mlecnica_01.jpg">
+        <img src="https://www.gobice.com/pic/Lactarius_vietus_-_Brezova_mlecnica_01.jpg" alt="Hallpiimane riisikas">
+        </a>
+    <div class="desc"><h3>Hallipiimane riisikas (Lactarius vietus)</h3>Kasvab juulist hilissügiseni. Toorelt kibe ja nõrgalt mürgine, kuid kupatatult söödav.</div>
     </div>
+    <div class="gallery">
+        <a target="_blank" href="https://nami-nami.ee/files/img/mokk.jpg">
+        <img src="https://nami-nami.ee/files/img/mokk.jpg" alt="Harilik põdramokk">
+        </a>
+    <div class="desc"><h3>Harilik põdramokk (Sarcodon imbricatus)</h3>Kasvab augustist oktoobrini. Mõned inimesed on põdramoka suhtes tundlikud ja neil tekitab seen seedehäireid või kõhuvalu. Seepärast tuleks põdramoka söömisesse suhtuda ettevaatlikult ja kasutada teda vaid vähesel hulgal segus teiste seentega, et roa maitsele ja lõhnale vürtsikust lisada. Sobib suppideks, kastmeteks, praetult ja hautatult kartulite ja köögiviljadega.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://nami-nami.ee/files/img/kamper.jpg">
+        <img src="https://nami-nami.ee/files/img/kamper.jpg" alt="Kamperriisikas">
+        </a>
+    <div class="desc"><h3>Kamperriisikas (Lactarius camphoratus)</h3>Värskelt on seen lõhnata, kuid kuivatatult omandab väga tugeva ja iseloomuliku lõhna. Seetõttu kuivatatult kasutatakse maitseainena. Kamperriisikat süües tuleb kupatada. Tarvitatakse liha-, kala- ja köögivilja toitude maitsestamiseks ja lisandiks.</div>
+        <br> 
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://www.biolib.cz/IMG/GAL/BIG/291723.jpg">
+        <img src="https://www.biolib.cz/IMG/GAL/BIG/291723.jpg" alt="Kaseriisikas">
+        </a>
+    <div class="desc"><h3>Kaseriisikas (Lactarius torminosus)</h3>Kasvab juuli lõpust hilissügiseni. Pärast kupatamist kuulub heade söögiseente hulka. Kibeda piimamahlaga, värskelt mürgine. Kaseriisikaid sobib säilitada soolatult, hapendatult ja marineeritult. Soolamisel seened peavad enne söömist vähemalt 45–50 päeva soolas olema</div>
+        <br> 
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://farm8.static.flickr.com/7242/7302802866_bd9feb605c.jpg">
+        <img src="https://farm8.static.flickr.com/7242/7302802866_bd9feb605c.jpg" alt="Kevadkorgits">
+        </a>
+    <div class="desc"><h3>Kevadkogrits (Gyromitra esculenta)</h3>Kasvab aprilli keskpaigast või maist juuni keskpaigani. Õigesti toiduks töödelduna on kevadkogrits söödav, kuid tegelikult on ta ohtlikult mürgine ja võib raskemal juhul isegi surma põhjustada. Kevadkogritsas sisalduvad mürkained lenduvad kuumutamisel kergesti ja tänu sellele muutuvad ilma kaaneta potis kupatatud või isegi lahtisel pannil praetud seened enamasti ohutuks. Mingil juhul ei tohi kevadkogritsaid küpsetada mikrolaineahjus, sest siis ei hävi mürkained ja raske mürgistus on vältimatu.</div>
+        <br> 
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://www.mycomons.be/Images/Beaufortain%20-%20France/IMG_0958%20Russula%20emetica%20%2029-08-12%2010-48-46.JPG">
+        <img src="https://www.mycomons.be/Images/Beaufortain%20-%20France/IMG_0958%20Russula%20emetica%20%2029-08-12%2010-48-46.JPG" alt="Kirbe pilvik">
+        </a>
+    <div class="desc"><h3>Kirbe pilvik (Russula emetica)</h3>Mürgine rabe seeneliha on põletava maitsega, kuid erilise lõhnata ja ei muuda värvi. Söödav ainult kupatatult.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://i.pinimg.com/736x/d9/83/da/d983da8924a523f11bf39f4fceeaa9df.jpg">
+        <img src="https://i.pinimg.com/736x/d9/83/da/d983da8924a523f11bf39f4fceeaa9df.jpg" alt="Kurrel">
+        </a>
+    <div class="desc"><h3>Kurrel (Ptychoverpa bohemica)</h3>Kasvab aprillist juunini. Kõige parem on seda süüa värskelt praetuna, sest säilitamiseks see ei sobi. Kindlasti ei tohi aga korjata selgete vananemistunnustega seeni, kuna need võivad põhjustada mürgistust.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://www.mykoweb.com/CAF/photos/large/Clitocybe_nuda%28fs-04%29.jpg">
+        <img src="https://www.mykoweb.com/CAF/photos/large/Clitocybe_nuda%28fs-04%29.jpg" alt="Lilla ebaheinik">
+        </a>
+    <div class="desc"><h3>Lilla ebaheinik (Lepista nuda)</h3>septembrist novembrini. Värskelt tekitab hemolüüsi ja põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://live.staticflickr.com/65535/48734840321_1b7093abfd_b.jpg">
+        <img src="https://live.staticflickr.com/65535/48734840321_1b7093abfd_b.jpg" alt="Männiriisikas">
+        </a>
+    <div class="desc"><h3>Männiriisikas (Lactarius rufus)</h3>Kasvab juulist novembrini. Kibeda maitseline, seetõttu tuleb seent kupatada 30 minutit või leotada 12 tundi külmas vees. Pärast leotamist keeda 5-10 minutit soolases vees. Männiriisikat on kõige otstarbekam tarvitada soolatult koos teiste sügiseste seentega. Säilitatakse marineeritult ja soolatult.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://lh3.googleusercontent.com/proxy/SBlXHaKlCfNug2IC3At-YZBGp3nWGzbVeKvv3PFA0uTkQD9dVGz78Q-H7W0sHGZNimSZbHylYsQ0q1MOJqCzQrDxiwit9QYc6EsKVhWuVG41OX6KpFatrAezpZN3">
+        <img src="https://lh3.googleusercontent.com/proxy/SBlXHaKlCfNug2IC3At-YZBGp3nWGzbVeKvv3PFA0uTkQD9dVGz78Q-H7W0sHGZNimSZbHylYsQ0q1MOJqCzQrDxiwit9QYc6EsKVhWuVG41OX6KpFatrAezpZN3" alt="Piparriisikas">
+        </a>
+    <div class="desc"><h3>Piparriisikas (Lactarius piperatius)</h3>Piimmahl on valge ja kibeda maitsega. Vajab kupatamist. Sobivam tarvitada soolatult.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://a4.pbase.com/o12/38/644138/1/129132254.bdgKqi1D.Ludenvitriskaeljttetrattskivling.jpg">
+        <img src="https://a4.pbase.com/o12/38/644138/1/129132254.bdgKqi1D.Ludenvitriskaeljttetrattskivling.jpg" alt="Rädipiimik ehk Rädiriisikas">
+        </a>
+    <div class="desc"><h3>Rädipiimik ehk Rädiriisikas (Lactarius vellereus)</h3>Kasvab juulist septembrini. Rädiriisika viljaliha on nii kõva, et kui seenekübarad üksteise vastu hõõrduvad, siis võib kuulda krigisevat häält. Seen on tinglikult söödav ning tarvitatakse kupatatult ja peamiselt soolatakse. Säilitatakse soolatult.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://www.pharmanatur.com/Mycologie/Lactarius%20repraesentaneus%204.jpg">
+        <img src="https://www.pharmanatur.com/Mycologie/Lactarius%20repraesentaneus%204.jpg" alt="Tore riisikas">
+        </a>
+    <div class="desc"><h3>Tore riisikas (Lactarius repraesentaneus)</h3>Kasvab augustist oktoobrini. Maitse pisut mõrkjas, nii et pikaajaline kupatamine ei ole vajalik. Säilitamine nagu teisigi riisikaid pärast eeltöötlemist soolata või külmutada.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://f8.pmo.ee/EdczP5Ef90r1Bw-aw2M2BwuvWM8=/685x0/filters:focal(2054x1038:4060x2650)/nginx/o/2020/07/24/13230512t1h0aa1.jpg">
+        <img src="https://f8.pmo.ee/EdczP5Ef90r1Bw-aw2M2BwuvWM8=/685x0/filters:focal(2054x1038:4060x2650)/nginx/o/2020/07/24/13230512t1h0aa1.jpg"alt="Tõmmu külmaseen">
+        </a>
+    <div class="desc"><h3>Tõmmu külmaseen (Armillaria ostoyae)</h3>Kasvab juulist oktoobrini. Hapuka maitsega. Värskelt tekitab hemolüüsi ning põhjustab mao-soolehäiretega mürgistust. Kasutatakse kupatatult seenesalatites, hautatult köögiviljadega ja soolamiseks. Säilitatakse soolatult.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%B5mmuriisikas.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/11/T%C3%B5mmuriisikas.jpg"alt="Tõmmuriisikas">
+        </a>
+    <div class="desc"><h3>Tõmmuriisikas (Lactarius necator)</h3>Kasvab augustist oktoobrini. Värskelt põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu söögiseen.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://lh3.googleusercontent.com/proxy/uYTQ27ghG-F0ynC_POSJM1iTYu-F5xC5iedwC1p9JzY2A4QYL49arKFrmSsrlt19sTulp6spt0QLNq7Fp-Hg9tIBN8Om44ZejmOpMUA3qg5iGY6zIcr200V0NeicfJZ9rsdr_RhPnu6quOzlss0kHW47SF6GR8E5StkjU7smE-qu6Rp9IqWB90NH2VltQliROdU6Z3u8zV4OeF9GawC8vUQlnD0_MiGg9cTkTX9B-3gEOQLKS0JihSjeV5d1Tum3T3tMy33A5kvp_f5O0mmhDgSwBp1hS2w1Bw0LXokcPE1yh-ggbpZ9j54">
+        <img src="https://lh3.googleusercontent.com/proxy/uYTQ27ghG-F0ynC_POSJM1iTYu-F5xC5iedwC1p9JzY2A4QYL49arKFrmSsrlt19sTulp6spt0QLNq7Fp-Hg9tIBN8Om44ZejmOpMUA3qg5iGY6zIcr200V0NeicfJZ9rsdr_RhPnu6quOzlss0kHW47SF6GR8E5StkjU7smE-qu6Rp9IqWB90NH2VltQliROdU6Z3u8zV4OeF9GawC8vUQlnD0_MiGg9cTkTX9B-3gEOQLKS0JihSjeV5d1Tum3T3tMy33A5kvp_f5O0mmhDgSwBp1hS2w1Bw0LXokcPE1yh-ggbpZ9j54" alt="Udulehtrik">
+        </a>
+    <div class="desc"><h3>Udulehtrik (Clitocybe nebularis)</h3>Kasvab augustist novembrini. Värskelt tekitab hemolüüsi ja põhjustab mao-soolehäiretega mürgistust, kupatatult ohutu.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="_blank" href="https://www.pharmanatur.com/Mycologie/Lactarius%20favrei%205.JPG">
+        <img src="https://www.pharmanatur.com/Mycologie/Lactarius%20favrei%205.JPG" alt="Viltriisikas">
+        </a>
+    <div class="desc"><h3>Viltriisikas (Lactarius scoticus)</h3>Tema piimmahl on valge ja  väga kibe, kuid kupatamisel kibedus kaob.</div>
+        <br>
+        </div>
+    <div class="gallery">
+        <a target="https://upload.wikimedia.org/wikipedia/commons/6/64/Lactarius_scrobiculatus_Grubige_Milchling.jpg">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Lactarius_scrobiculatus_Grubige_Milchling.jpg" alt="Võiseen ehk kollariisikas">
+        </a>
+    <div class="desc"><h3>Võiseen ehk kollariisikas (Lactarius scrobiculatus)</h3>Kollariisikas on kibe ja Sisaldab mürgiseid terpenoide, mistõttu peab teda eelnevalt kupatama.</div>
+        <br>
+        </div>
 </body>
 </html>
