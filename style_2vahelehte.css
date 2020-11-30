@@ -1,0 +1,27 @@
+.h-text {
+    font-family: American Typewriter, serif;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white;
+}
+div.gallery {
+    margin-left: 27.5%;
+    margin-right: auto;
+    margin-top: 35px;
+    border: 1px solid #2C2C2C;
+    background-color: #FFFAF0;
+    float: left;
+    width: 600px;
+}
+  div.gallery img {
+    width: 100%;
+    height: 400px;
+}
+div.desc {
+    font-family: Palatino, URW Palladio L, serif;
+    padding: 15px;
+    text-align: center;
+}
