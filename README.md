@@ -1,1 +1,1 @@
-# S99giseente-veebileht
+# Söögiseente-veebileht tutvustab Eestis leiduvaid söögiseeni, nende asukohti ja õpetab kupatama.
