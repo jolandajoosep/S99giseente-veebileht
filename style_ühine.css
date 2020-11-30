@@ -5,7 +5,6 @@ body, html {
     background-image: url("https://wallpaperaccess.com/full/250769.png"); 
   }
 .bg {
-    background-image: url("https://i0.wp.com/tuuliretseptid.ee/wp-content/uploads/2010/09/seeneaeg.jpg?ssl=1");
     height: 600px;
     background-position: center;
     background-repeat: no-repeat;
@@ -16,9 +15,9 @@ body, html {
     background-color: black;
     opacity: 60%;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     overflow: auto;
     padding: 40px;
     border-radius: 4px;
