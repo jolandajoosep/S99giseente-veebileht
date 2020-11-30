@@ -12,3 +12,7 @@
     position: absolute;
     color: rgb(190, 181, 167);
 }
+.center{
+    margin-left: auto;
+    margin-right: auto;
+}
