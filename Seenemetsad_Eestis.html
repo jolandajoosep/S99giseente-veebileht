@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ee">
+<meta charset= 'UTF-8'>
+<style>
+body, html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: none;
+}
+.bg {
+  background-image: url("https://blog.ut.ee/wp-content/uploads/2013/10/lake-Toomas-Tuul.jpg");
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.bg2 {
+	background-color: black;
+	opacity: 60%;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	overflow: auto;
+	padding: 60px;
+	border-radius: 4px;
+	width: 60%;
+	height: 200px;
+}
+.h-text {
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  color: white;
+}
+.button {
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 20px 32px;
+  width: 300px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  float: left;
+}
+
+.button1 {
+  background-color: #2C2C2C;
+  color: white; 
+  overflow: hidden;
+}
+
+.button1:hover {
+  background-color: #E9967A; /nupule minemise värv
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.ul {
+  float: left;
+  list-style-type: none;
+  margin-top: 50px;
+  margin-left: 6%;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  border: 1px solid #555;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.s {
+  float: right;
+  width: auto;
+  height: auto;
+  overflow: auto;
+  align-content: center;
+  margin-right: 10%;
+  margin-top: 50px;
+}
+</style>
+</head>
+<body>
+	<div class="bg"><div class="bg2"></div>
+		<div class="h-text">
+	        <h1>SEENEMETSAD EESTIS</h1>
+	        <h3>tutvustus tutvustus tutvustus tutvustus tutvustus tutvustus tutvustus </h3></div></div>
+	<ul>
+      <button class="button button1" href="#leht">Pealeht
+        </button>
+    	<button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt söödavad seened</button>
+      <button class="button button1" href="./Värskelt mürgiste seente alaleht.html">Värskelt mürgised seened</button>
+      <button class="button button1" href="#leht">Kupatamisjuhised
+        </button>
+    </ul>
+  <ul class="ul">
+  <li><a href="#home">seen1</a></li>
+  <li><a href="#news">seen2</a></li>
+  <li><a href="#contact">seen3</a></li>
+  <li><a href="#about">seen4</a></li>
+</ul>
+  <div class="s"><iframe src="https://www.google.com/maps/d/embed?mid=1KvoqZf_-Xh7zo5LrJf5OgygzYDWolUS5" width="640" height="480"></iframe></div>
+}
+</script>
+</script>
+  </body>
+  </html>
